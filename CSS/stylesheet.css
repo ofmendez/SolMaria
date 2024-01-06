@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ImageFlexbox{
+    width:100%;
+}
+    
+.GeneralContainer{
+    background: #d5ccbf;
+}
+
+.BannerInicial{
+    width:100%;
+    display: block;
+}
+
+.BannerInicial img{
+    width:100%;
+}
+
+.ContentContainer{
+    background-image: url("../Images/Fondo.jpg");
+    background-position: top center;
+    background-repeat: repeat;
+}
+
+.FirstRowContainer{
+    display: flex;
+    flex-direction: row;
+    padding:0 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.FR01, .FR02{
+    width:50%;
+}
+
+
+.FR02{
+    padding:5% 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.BotonPlataforma{
+    height:5vw;
+    cursor: pointer;
+}
+
+.SecondRowContainer{
+    padding:4% 4% 0 4%;
+    z-index: 2;
+    position: relative;
+}
+
+.ThirdRowContainer{
+    margin-top:-8%;
+    z-index:1;
+    position: relative;
+}
+
+.Image03Desktop{
+    display:block;
+}
+
+.Image03Mobile{
+    display:none;
+}
+
+.ImageArt{
+    padding:5%;
+    margin-top: -8%;
+}
+
+.FourthRowContainer{
+    margin-top: -5%;
+    padding:0;
+    z-index: 2;
+    position: relative;
+}
+
+.FifthRowContainer{
+    display: flex;
+    flex-direction: row;
+    padding:4% 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.FifthR01, .FifthR02{
+    padding:5%;
+
+}
+
+
+@media (max-width: 800px){
+    .FirstRowContainer{ 
+     flex-direction: column;
+ }
+ .FR01, .FR02{
+     width:100%;
+ }
+
+ .BotonPlataforma{
+    height:10vw;
+}
+
+.Image03Desktop{
+    display:none;
+}
+
+.Image03Mobile{
+    display:block;
+}
+
+.FourthRowContainer{
+    margin-top: 1%;
+}
+
+.FifthRowContainer{
+    flex-direction: column;
+ }
+
+}
