@@ -5,11 +5,16 @@
     margin: 0;
     padding: 0;
 }
+
  H2{
     font-family: 'Archivo Black', sans-serif;
     font-size: 4vw;
     text-transform: uppercase;
-    color: #333333;
+    color: #000;
+ }
+
+ .linkSVG{
+    width:fit-content;
  }
 
 .ImageFlexbox{
@@ -37,6 +42,37 @@
     margin-top:-1px;
 }
 
+.DesktopMenu{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.MenuSection{
+    width:70%;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.MenuImage{
+    height:3vw;
+    cursor:pointer;
+}
+
+.SNSection{
+    width:30%;
+    display: flex;
+    justify-content: flex-end;
+    gap:1vw;
+}
+
+.SNImage{
+    height:2.6vw;
+    cursor:pointer;
+}
+
 .FirstRowContainer{
     display: flex;
     flex-direction: row;
@@ -47,8 +83,8 @@
 
 .FR01, .FR02{
     width:50%;
+    align-items: center;
 }
-
 
 .FR02{
     padding:5% 0;
@@ -107,16 +143,100 @@
 
 }
 
+/* Mobile Menu*/
+
+.MenuPrincipal{
+    display: none;
+ position: absolute;
+ top:3vw;
+ left:50%;
+ transform: translateX(-50%);
+}
+
+.MenuPrincipal img{
+    padding:0 !important;
+    margin-top:0 !important;
+}
+
+.overlay {  
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 20; 
+    left: 0;
+    top: 0;
+    background-color: #020202ee; 
+    overflow-y: hidden; 
+    transition: 0.5s; 
+}
+
+.overlay-content {
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center; 
+}
+
+.overlay a {
+    line-height: 1.2em;
+    text-decoration: none;
+    font-size: 4vh;
+    color: #fff;
+    transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    text-decoration: none!important;
+}
+
 
 @media (max-width: 800px){
 
-    H2{
-        font-size: 8vw;
-        
-     }
+H2{
+    font-size: 8vw;
+ }
 
-    .FirstRowContainer{ 
+.FirstRowContainer{ 
      flex-direction: column;
+ }
+
+ .DesktopMenu{
+    display:none;
+ }
+
+ .MenuPrincipal{
+    display: block;
+ }
+
+ .MenuImage{
+    height:10vw;
+    filter: invert(1);
+ }
+
+ .SNMobileSection{
+    position: absolute;
+    bottom:8vw;
+    left:50%;
+    transform: translateX(-50%);
+    display:flex;
+    gap:3vw;
+    align-items: center;
+    justify-content: center;
+}
+
+ .SNImage{
+    filter: invert(1);
+    height:5vw;
  }
  .FR01, .FR02{
      width:100%;
