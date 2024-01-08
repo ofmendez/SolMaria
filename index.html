@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Sol Maria</title>
+      <title>Sol Maria | Eladio Carrión</title>
       <link rel="stylesheet" href="./CSS/stylesheet.css">
       <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
       <meta name="view-transition" content="same-origin" />
@@ -13,16 +13,71 @@
       <div class="GeneralContainer">
          <img class="BannerInicial" src="Images/Banner01.jpg" />
          <div class="ContentContainer">
+            <!-- Start Menu Desktop -->
+            <div class="DesktopMenu">
+               <div class="MenuSection">
+                  <img class="MenuImage" id="menuTour" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/>
+                  <img class="MenuImage" id="menuMusic" src="Images/Music.svg" onmouseover='hoverMusic()' onmouseout='outMusic()'/>
+                  <img class="MenuImage" id="menuVideos" src="Images/Videos.svg" onmouseover='hoverVideos()' onmouseout='outVideos()'/>
+                  <img class="MenuImage" id="menuMerch" src="Images/Merch.svg" onmouseover='hoverMerch()' onmouseout='outMerch()'/>
+               </div>
+               <div class="SNSection">
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/spotify.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/apple-music.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/youtube.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/instagram.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"> <img class="SNImage" src="Images/facebook.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/twitter.svg"/></a>
+               </div>
+            </div>
+            <!-- End Menu Desktop -->
+            <!-- Start Menu Mobile -->
+            <div id="myNav" class="overlay">
+               <!-- Button to close the overlay navigation -->
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <div>  <img class="MenuImage" id="menuTourMobile" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/></div>
+                  <br>
+                  <div><img class="MenuImage" id="menuMusicMobile" src="Images/Music.svg" onmouseover='hoverMusic()' onmouseout='outMusic()'/></div>
+                  <br>
+                  <div><img class="MenuImage" id="menuVideosMobile" src="Images/Videos.svg" onmouseover='hoverVideos()' onmouseout='outVideos()'/></div>
+                  <br>
+                  <div><img class="MenuImage" id="menuMerchMobile" src="Images/Merch.svg" onmouseover='hoverMerch()' onmouseout='outMerch()'/></div>
+                  <br>
+               </div>
+               <div class="SNMobileSection">
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/spotify.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/apple-music.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/youtube.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/instagram.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"> <img class="SNImage" src="Images/facebook.svg"/></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="SNImage" src="Images/twitter.svg"/></a>
+               </div>
+            </div>
+            <a class="MenuPrincipal" onclick="openNav()"><img src="Images/Menu.svg" alt="" width="32" height="32" /></a> 
+            <script>
+               function openNav() {
+               document.getElementById("myNav").style.height = "100%";
+               }
+               
+               function closeNav() {
+               document.getElementById("myNav").style.height = "0%";
+               }
+               
+            </script>
+            <!-- End Menu Mobile -->
+            <br>
             <div class="FirstRowContainer">
                <div class="FR01">
                   <img class="ImageFlexbox" src="Images/Foto01.png" />
                </div>
-               <div class="FR02"> 
+               <div class="FR02">
                   <h2>Pre-Save <br>Pre-Add Now:</h2>
                   <br>
-                  <a href="http://www.google.com" target="_blank"><img class="BotonPlataforma" src="Images/Apple_btn.svg" /></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="BotonPlataforma" src="Images/Apple_btn.svg" /></a>
                   <br>
-                  <a href="http://www.google.com" target="_blank"><img class="BotonPlataforma" src="Images/Spotify_btn.svg" /></a>
+                  <a href="http://www.google.com" class="linkSVG" target="_blank"><img class="BotonPlataforma" src="Images/Spotify_btn.svg" /></a>
                </div>
             </div>
             <div class="SecondRowContainer">
@@ -48,5 +103,39 @@
             </div>
          </div>
       </div>
+      <script>
+         function hoverTour() {
+          document.getElementById("menuTour").src = "Images/ComingSoon.svg";
+          document.getElementById("menuTourMobile").src = "Images/ComingSoon.svg";
+         }
+         function outTour() {
+          document.getElementById("menuTour").src = "Images/Tour.svg";
+          document.getElementById("menuTourMobile").src = "Images/Tour.svg";
+         }
+         function hoverMusic() {
+          document.getElementById("menuMusic").src = "Images/ComingSoon.svg";
+          document.getElementById("menuMusicMobile").src = "Images/ComingSoon.svg";
+         }
+         function outMusic() {
+          document.getElementById("menuMusic").src = "Images/Music.svg";
+          document.getElementById("menuMusicMobile").src = "Images/Music.svg";
+         }
+         function hoverVideos() {
+          document.getElementById("menuVideos").src = "Images/ComingSoon.svg";
+          document.getElementById("menuVideosMobile").src = "Images/ComingSoon.svg";
+         }
+         function outVideos() {
+          document.getElementById("menuVideos").src = "Images/Videos.svg";
+          document.getElementById("menuVideosMobile").src = "Images/Videos.svg";
+         }
+         function hoverMerch() {
+          document.getElementById("menuMerch").src = "Images/ComingSoon.svg";
+          document.getElementById("menuMerchMobile").src = "Images/ComingSoon.svg";
+         }
+         function outMerch() {
+          document.getElementById("menuMerch").src = "Images/Merch.svg";
+          document.getElementById("menuMerchMobile").src = "Images/Merch.svg";
+         }
+      </script>
    </body>
 </html>
