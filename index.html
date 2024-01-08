@@ -30,6 +30,16 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
 
       <meta name="facebook-domain-verification" content="q6jp81ypr85ozsq89kt83e6xjlpmj1" />
       
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M8706GBK7D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M8706GBK7D');
+</script>
+
    </head>
    <body>
       <div class="GeneralContainer">
@@ -42,9 +52,13 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
                   <img class="MenuImage" id="menuVideos" src="Images/Videos.svg" onmouseover='hoverVideos()' onmouseout='outVideos()'/>
                   <img class="MenuImage" id="menuMerch" src="Images/Merch.svg" onmouseover='hoverMerch()' onmouseout='outMerch()'/>
                   <img class="MenuImage" id="menuTour" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/>
+                  <img class="MenuImage" id="menuBio" src="Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/>
+                  <img class="MenuImage" id="menuAbout" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/>
                </div>
+   
             </div>
             <!-- End Menu Desktop -->
+            <br>
             <!-- Start Menu Mobile -->
             <div id="myNav" class="overlay">
                <!-- Button to close the overlay navigation -->
@@ -59,6 +73,11 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
                   <br>
                   <div>  <img class="MenuImage" id="menuTourMobile" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/></div>
                   <br>
+                  <div>  <img class="MenuImage" id="menuBioMobile" src="Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/></div>
+                  <br>
+                  <div>  <img class="MenuImage" id="menuAboutMobile" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/></div>
+                  <br>
+
                </div>
                <div class="SNMobileSection">
                   <a href="https://open.spotify.com/artist/5XJDexmWFLWOkjOEjOVX3e?si=uSy9IhtzSxa3hnZ0xCjFMQ" class="linkSVG" target="_blank"><img class="SNImage" src="Images/spotify.svg"/></a>
@@ -125,10 +144,8 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
                   <a href="https://www.facebook.com/share/Ng7iKnpcWv5QtLjm/?" class="linkSVG" target="_blank"> <img class="SNImage" src="Images/facebook.svg"/></a>
                   <a href="https://x.com/eladiocarry_on?s=21" class="linkSVG" target="_blank"><img class="SNImage" src="Images/twitter.svg"/></a>
                   <a href="https://www.tiktok.com/@eladiocarrioneldelah?_t=8iqqbTf9hdC&_r=1" class="linkSVG" target="_blank"><img class="SNImage" src="Images/tiktok.svg"/></a>
-               </div>
+               </div><br>
          </div>
-
-         
          
       </div>
       <script>
@@ -163,6 +180,22 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
          function outMerch() {
           document.getElementById("menuMerch").src = "Images/Merch.svg";
           document.getElementById("menuMerchMobile").src = "Images/Merch.svg";
+         }
+         function hoverBio() {
+          document.getElementById("menuBio").src = "Images/ComingSoon.svg";
+          document.getElementById("menuBioMobile").src = "Images/ComingSoon.svg";
+         }
+         function outBio() {
+          document.getElementById("menuBio").src = "Images/Bio.svg";
+          document.getElementById("menuBioMobile").src = "Images/Bio.svg";
+         }
+         function hoverAbout() {
+          document.getElementById("menuAbout").src = "Images/ComingSoon.svg";
+          document.getElementById("menuAboutMobile").src = "Images/ComingSoon.svg";
+         }
+         function outAbout() {
+          document.getElementById("menuAbout").src = "Images/About.svg";
+          document.getElementById("menuAboutMobile").src = "Images/About.svg";
          }
       </script>
    </body>
