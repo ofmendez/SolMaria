@@ -1,5 +1,9 @@
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@font-face {
+    font-family: SupplyRegular;
+    src: url(../Fonts/SupplyRegular.woff);
+  }
 
 * {
     margin: 0;
@@ -9,7 +13,8 @@
 
  H2{
     font-family: 'Archivo Black', sans-serif;
-    font-size: 4vw;
+    font-size: 3.5vw;
+    line-height:3vw;
     text-transform: uppercase;
     color: #000;
  }
@@ -26,12 +31,17 @@
     background: #d5ccbf;
 }
 
-.BannerInicial{
+.BannerInicialDesktop{
     width:100%;
     display: block;
 }
 
-.BannerInicial img{
+.BannerInicialMovil{
+    width:100%;
+    display: none;
+}
+
+.BannerInicialDesktop, .BannerInicialMovil img{
     width:100%;
 }
 
@@ -92,16 +102,26 @@
     align-items: center;
 }
 
-.FR01, .FR02{
-    width:50%;
+.FR01{
+    width:40%;
     align-items: center;
+    
 }
 
 .FR02{
+    width:60%;
+    align-items: center;
     padding:5% 0;
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding-left: 5vw;
+}
+
+.Tracklist{
+    font-family: SupplyRegular;
+    letter-spacing: 0.2vw;
+    font-size:1vw;
 }
 
 .BotonPlataforma{
@@ -224,11 +244,29 @@
 
 H2{
     font-size: 8vw;
+    line-height:7vw;
  }
 
 .FirstRowContainer{ 
      flex-direction: column;
  }
+
+ .FR01{
+    order:2;
+}
+
+.FR02{
+    order:1;
+    padding:0 0 5% 0;
+}
+
+.BannerInicialDesktop{
+    display:none;
+}
+
+.BannerInicialMovil{
+    display:block;
+}
 
  .DesktopMenu{
     display:none;
@@ -264,6 +302,11 @@ H2{
  .FR01, .FR02{
      width:100%;
  }
+
+ .Tracklist{
+    letter-spacing: 0.32vw;
+    font-size:1.9vw;
+}
 
  .BotonPlataforma{
     height:10vw;
