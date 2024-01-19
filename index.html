@@ -8,42 +8,36 @@
       <link rel="stylesheet" href="./CSS/stylesheet01.css">
       <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
       <meta name="view-transition" content="same-origin" />
-
       <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-   <meta http-equiv="Pragma" content="no-cache" />
-   <meta http-equiv="Expires" content="0" />
-      
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '842331984305631');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" />
+      <!-- Meta Pixel Code -->
+      <script>
+         !function(f,b,e,v,n,t,s)
+         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '842331984305631');
+         fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
+         /></noscript>
+      <!-- End Meta Pixel Code -->
       <meta name="facebook-domain-verification" content="q6jp81ypr85ozsq89kt83e6xjlpmj1" />
-      
       <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M8706GBK7D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M8706GBK7D');
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8706GBK7D"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-M8706GBK7D');
+      </script>
    </head>
    <body>
       <div class="GeneralContainer">
@@ -60,7 +54,6 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
                   <img class="MenuImage" id="menuBio" src="Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/>
                   <img class="MenuImage" id="menuAbout" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/>
                </div>
-   
             </div>
             <!-- End Menu Desktop -->
             <br>
@@ -82,7 +75,6 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
                   <br>
                   <div>  <img class="MenuImage" id="menuAboutMobile" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/></div>
                   <br>
-
                </div>
                <div class="SNMobileSection">
                   <a href="https://open.spotify.com/artist/5XJDexmWFLWOkjOEjOVX3e?si=uSy9IhtzSxa3hnZ0xCjFMQ" class="linkSVG" target="_blank"><img class="SNImage" src="Images/spotify.svg"/></a>
@@ -106,20 +98,40 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
                
             </script>
             <!-- End Menu Mobile -->
-            
             <div class="FirstRowContainer">
                <div class="FR01">
                   <img class="ImageFlexbox" src="Images/Foto01.png" />
                </div>
                <div class="FR02">
-                  <h2>Pre-Save <br>Pre-Add Now:</h2>
+                  <h2>Listen Now:</h2>
                   <br>
-                  <a href="https://music.apple.com/us/album/sol-mar%C3%ADa/1724445296?ls=1" class="linkSVG" target="_blank"><img class="BotonPlataforma" src="Images/Apple_btn.svg" /></a>
                   <br>
-                  <a href="https://urlgeni.us/spotify/SolMaria" class="linkSVG" target="_blank"><img class="BotonPlataforma" src="Images/Spotify_btn.svg" /></a>
+                  <div class="ContenedorPlataformas">
+                     <a href="https://urlgeni.us/applemusic/eladio-solmaria-web" class="linkSVG" target="_blank"><img id="plat_apple" class="Btn_Plataforma" src="Images/Plataformas/Btn_Apple.svg"
+                        onmouseover='hoverApple()' onmouseout='outApple()'/></a>
 
+                     <a href="https://urlgeni.us/spotify/eladio-solmaria-web" class="linkSVG" target="_blank"><img id="plat_spotify" class="Btn_Plataforma" src="Images/Plataformas/Btn_Spotify.svg"
+                        onmouseover='hoverSpotify()' onmouseout='outSpotify()'/></a>
+
+                     <a href="https://rimas.ffm.to/solmaria" class="linkSVG" target="_blank"><img id="plat_youtube" class="Btn_Plataforma" src="Images/Plataformas/Btn_Youtube.svg"
+                        onmouseover='hoverYoutube()' onmouseout='outYoutube()' /></a>
+
+                     <a href="https://music.amazon.com/albums/B0CRL7CDWR" class="linkSVG" target="_blank"><img id="plat_amazon" class="Btn_Plataforma" src="Images/Plataformas/Btn_Amazon.svg"
+                        onmouseover='hoverAmazon()' onmouseout='outAmazon()' /></a>
+
+                      <a href="" class="linkSVG" target="_blank"><img id="plat_pandora" class="Btn_Plataforma" src="Images/Plataformas/Btn_Pandora.svg"
+                        onmouseover='hoverPandora()' onmouseout='outPandora()' /></a>
+
+                     <a href="tidal.com/browse/album/340536957" class="linkSVG" target="_blank"><img id="plat_tidal" class="Btn_Plataforma" src="Images/Plataformas/Btn_Tidal.svg"
+                        onmouseover='hoverTidal()' onmouseout='outTidal()' /></a>
+
+                     <a href="" class="linkSVG" target="_blank"><img id="plat_deezer" class="Btn_Plataforma" src="Images/Plataformas/Btn_Deezer.svg"
+                        onmouseover='hoverDeezer()' onmouseout='outDeezer()' /></a>
+                  </div>
+                  <br>
                   <br>
                   <h2>Tracklist:</h2>
+                  <br>
                   <br>
                   <p class="Tracklist">1. BENDECIDO &nbsp 2. LA CANCIÓN FELIZ DEL DISCO FT. MILO J
                      <br>3. TQMQA &nbsp 4. SONRISA &nbsp 5. STILL IN LOVE YANDEL
@@ -130,7 +142,8 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
                      <br>11. FÉ, COJONES Y PACIENCIA &nbsp 12. TODO LIT FT. DUKI
                      <br>13. THAT MOTHERF*** ELADIO 
                      <br>14. MENCIONAR &nbsp  15. RKO
-                     <br>16. LUCHAS MENTALES &nbsp 17. MAMA’S BOY FT. NACH</p>
+                     <br>16. LUCHAS MENTALES &nbsp 17. MAMA’S BOY FT. NACH
+                  </p>
                </div>
             </div>
             <div class="SecondRowContainer">
@@ -154,18 +167,17 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
                   <img class="ImageFlexbox" src="Images/Foto06.jpg" />
                </div>
             </div>
-
             <div class="SNSection">
-                  <a href="https://open.spotify.com/artist/5XJDexmWFLWOkjOEjOVX3e?si=uSy9IhtzSxa3hnZ0xCjFMQ" class="linkSVG" target="_blank"><img class="SNImage" src="Images/spotify.svg"/></a>
-                  <a href="https://music.apple.com/us/artist/eladio-carri%C3%B3n/1024801206" class="linkSVG" target="_blank"><img class="SNImage" src="Images/apple-music.svg"/></a>
-                  <a href="https://youtube.com/@EladioCarrion?si=6dES1WLVUY79lVxG" class="linkSVG" target="_blank"><img class="SNImage" src="Images/youtube.svg"/></a>
-                  <a href="https://www.instagram.com/eladiocarrion?igsh=MW44OTM1djJxdWMwZg==" class="linkSVG" target="_blank"><img class="SNImage" src="Images/instagram.svg"/></a>
-                  <a href="https://www.facebook.com/share/Ng7iKnpcWv5QtLjm/?" class="linkSVG" target="_blank"> <img class="SNImage" src="Images/facebook.svg"/></a>
-                  <a href="https://x.com/eladiocarry_on?s=21" class="linkSVG" target="_blank"><img class="SNImage" src="Images/twitter.svg"/></a>
-                  <a href="https://www.tiktok.com/@eladiocarrioneldelah?_t=8iqqbTf9hdC&_r=1" class="linkSVG" target="_blank"><img class="SNImage" src="Images/tiktok.svg"/></a>
-               </div><br>
+               <a href="https://open.spotify.com/artist/5XJDexmWFLWOkjOEjOVX3e?si=uSy9IhtzSxa3hnZ0xCjFMQ" class="linkSVG" target="_blank"><img class="SNImage" src="Images/spotify.svg"/></a>
+               <a href="https://music.apple.com/us/artist/eladio-carri%C3%B3n/1024801206" class="linkSVG" target="_blank"><img class="SNImage" src="Images/apple-music.svg"/></a>
+               <a href="https://youtube.com/@EladioCarrion?si=6dES1WLVUY79lVxG" class="linkSVG" target="_blank"><img class="SNImage" src="Images/youtube.svg"/></a>
+               <a href="https://www.instagram.com/eladiocarrion?igsh=MW44OTM1djJxdWMwZg==" class="linkSVG" target="_blank"><img class="SNImage" src="Images/instagram.svg"/></a>
+               <a href="https://www.facebook.com/share/Ng7iKnpcWv5QtLjm/?" class="linkSVG" target="_blank"> <img class="SNImage" src="Images/facebook.svg"/></a>
+               <a href="https://x.com/eladiocarry_on?s=21" class="linkSVG" target="_blank"><img class="SNImage" src="Images/twitter.svg"/></a>
+               <a href="https://www.tiktok.com/@eladiocarrioneldelah?_t=8iqqbTf9hdC&_r=1" class="linkSVG" target="_blank"><img class="SNImage" src="Images/tiktok.svg"/></a>
+            </div>
+            <br>
          </div>
-         
       </div>
       <script>
          function hoverTour() {
@@ -216,6 +228,51 @@ src="https://www.facebook.com/tr?id=842331984305631&ev=PageView&noscript=1"
           document.getElementById("menuAbout").src = "Images/About.svg";
           document.getElementById("menuAboutMobile").src = "Images/About.svg";
          }
+         
+         function hoverApple() {
+          document.getElementById("plat_apple").src = "Images/Plataformas/Btn_Apple_Hover.svg";
+         }
+         function outApple() {
+          document.getElementById("plat_apple").src = "Images/Plataformas/Btn_Apple.svg";
+         }
+         function hoverSpotify() {
+          document.getElementById("plat_spotify").src = "Images/Plataformas/Btn_Spotify_Hover.svg";
+         }
+         function outSpotify() {
+          document.getElementById("plat_spotify").src = "Images/Plataformas/Btn_Spotify.svg";
+         }
+         function hoverYoutube() {
+          document.getElementById("plat_youtube").src = "Images/Plataformas/Btn_Youtube_Hover.svg";
+         }
+         function outYoutube() {
+          document.getElementById("plat_youtube").src = "Images/Plataformas/Btn_Youtube.svg";
+         }
+         function hoverAmazon() {
+          document.getElementById("plat_amazon").src = "Images/Plataformas/Btn_Amazon_Hover.svg";
+         }
+         function outAmazon() {
+          document.getElementById("plat_amazon").src = "Images/Plataformas/Btn_Amazon.svg";
+         }
+         function hoverPandora() {
+          document.getElementById("plat_pandora").src = "Images/Plataformas/Btn_Pandora_Hover.svg";
+         }
+         function outPandora() {
+          document.getElementById("plat_pandora").src = "Images/Plataformas/Btn_Pandora.svg";
+         }
+         function hoverTidal() {
+          document.getElementById("plat_tidal").src = "Images/Plataformas/Btn_Tidal_Hover.svg";
+         }
+         function outTidal() {
+          document.getElementById("plat_tidal").src = "Images/Plataformas/Btn_Tidal.svg";
+         }
+         function hoverDeezer() {
+          document.getElementById("plat_deezer").src = "Images/Plataformas/Btn_Deezer_Hover.svg";
+         }
+         function outDeezer() {
+          document.getElementById("plat_deezer").src = "Images/Plataformas/Btn_Deezer.svg";
+         }
+         
+         
       </script>
    </body>
 </html>
