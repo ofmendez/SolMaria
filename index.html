@@ -50,7 +50,7 @@
                   <img class="MenuImage" id="menuMusic" src="Images/Music.svg" onmouseover='hoverMusic()' onmouseout='outMusic()'/>
                   <a href="https://www.youtube.com/@EladioCarrion" target="_blank"> <img class="MenuImage" id="menuVideos" src="Images/Videos.svg" onmouseover='hoverVideos()' onmouseout='outVideos()'/></a>
                   <a href="https://solmaria.shop/" target="_blank"><img class="MenuImage" id="menuMerch" src="Images/Merch.svg" onmouseover='hoverMerch()' onmouseout='outMerch()'/></a>
-                  <img class="MenuImage" id="menuTour" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/>
+                  <a href="HTML/tour.html"><img class="MenuImage" id="menuTour" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/></a>
                   <img class="MenuImage" id="menuBio" src="Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/>
                   <img class="MenuImage" id="menuAbout" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/>
                </div>
@@ -69,7 +69,7 @@
                   <br>
                   <div><a href="https://solmaria.shop/" target="_blank"><img class="MenuImage" id="menuMerchMobile" src="Images/Merch.svg" onmouseover='hoverMerch()' onmouseout='outMerch()'/></a></div>
                   <br>
-                  <div>  <img class="MenuImage" id="menuTourMobile" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/></div>
+                  <div>  <a href="HTML/tour.html"><img class="MenuImage" id="menuTourMobile" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/></div></a>
                   <br>
                   <div>  <img class="MenuImage" id="menuBioMobile" src="Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/></div>
                   <br>
@@ -181,8 +181,8 @@
       </div>
       <script>
          function hoverTour() {
-          document.getElementById("menuTour").src = "Images/ComingSoon.svg";
-          document.getElementById("menuTourMobile").src = "Images/ComingSoon.svg";
+          document.getElementById("menuTour").src = "Images/TourHover.svg";
+          document.getElementById("menuTourMobile").src = "Images/TourHover.svg";
          }
          function outTour() {
           document.getElementById("menuTour").src = "Images/Tour.svg";
