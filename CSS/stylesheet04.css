@@ -425,3 +425,79 @@ color:#fff !important;
 text-decoration:line-through 2px;
 cursor:default !important;
 }
+
+
+/* Pagina About */
+
+.ContenedorDescripciones{
+    display: flex;
+    flex-direction: row;
+    padding:0 8%;
+    gap:8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ColumnaDescripcionFoto{
+    width:40%;
+    align-items: center;
+}
+.ColumnaDescripcionTexto{
+    width:60%;
+    align-items: center;
+    padding:5% 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.DescripcionAbout{
+   
+    color:#000;
+    font-family: SupplyRegular;
+    font-size: 1.2vw;
+}
+
+.AlineadoIzquierda{
+    text-align: LEFT;
+}
+
+.AlineadoDerecha{
+    text-align: right;
+}
+
+.ImagenAboutCollage{
+    width:80%;
+    margin:0 auto;
+    display: block;
+}
+
+@media (max-width: 800px){
+
+    .ContenedorDescripciones{
+        flex-direction: column;
+    }
+
+    .ColumnaDescripcionFoto{
+        width:100%;
+        align-items: center;
+        order:1;
+    }
+    .ColumnaDescripcionTexto{
+        width:100%;
+        order:2;
+    }
+
+    .DescripcionAbout{
+        font-size: 3vw;
+    }
+
+    .AlineadoIzquierda{
+        text-align: justify;
+    }
+    
+    .AlineadoDerecha{
+        text-align: justify;
+    }
+
+}
