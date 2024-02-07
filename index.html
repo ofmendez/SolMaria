@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Sol Maria | Eladio Carrión</title>
-      <link rel="stylesheet" href="./CSS/stylesheet04.css">
+      <link rel="stylesheet" href="./CSS/stylesheet05.css">
       <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
       <meta name="view-transition" content="same-origin" />
       <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -52,7 +52,7 @@
                   <a href="https://solmaria.shop/" target="_blank"><img class="MenuImage" id="menuMerch" src="Images/Merch.svg" onmouseover='hoverMerch()' onmouseout='outMerch()'/></a>
                   <a href="HTML/tour.html"><img class="MenuImage" id="menuTour" src="Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/></a>
                   <img class="MenuImage" id="menuBio" src="Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/>
-                  <img class="MenuImage" id="menuAbout" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/>
+                  <a href="HTML/about.html"> <img class="MenuImage" id="menuAbout" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/></a>
                </div>
             </div>
             <!-- End Menu Desktop -->
@@ -73,7 +73,7 @@
                   <br>
                   <div>  <img class="MenuImage" id="menuBioMobile" src="Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/></div>
                   <br>
-                  <div>  <img class="MenuImage" id="menuAboutMobile" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/></div>
+                  <div>  <a href="HTML/about.html"><img class="MenuImage" id="menuAboutMobile" src="Images/About.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/></div></a>
                   <br>
                </div>
                <div class="SNMobileSection">
@@ -221,8 +221,8 @@
           document.getElementById("menuBioMobile").src = "Images/Bio.svg";
          }
          function hoverAbout() {
-          document.getElementById("menuAbout").src = "Images/ComingSoon.svg";
-          document.getElementById("menuAboutMobile").src = "Images/ComingSoon.svg";
+          document.getElementById("menuAbout").src = "Images/AboutHover.svg";
+          document.getElementById("menuAboutMobile").src = "Images/AboutHover.svg";
          }
          function outAbout() {
           document.getElementById("menuAbout").src = "Images/About.svg";
