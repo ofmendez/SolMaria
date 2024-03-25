@@ -51,11 +51,11 @@
          <!-- Start Menu Desktop -->
          <div class="DesktopMenu">
             <div class="MenuSection">
-               <img class="MenuImage" id="menuMusic" src="../Images/Music.svg" onmouseover='hoverMusic()' onmouseout='outMusic()'/>
+               <a href="https://solmaria.com/"><img class="MenuImage" id="menuMusic" src="../Images/Music.svg" onmouseover='hoverMusic()' onmouseout='outMusic()'/></a>
                <a href="https://www.youtube.com/@EladioCarrion" target="_blank"> <img class="MenuImage" id="menuVideos" src="../Images/Videos.svg" onmouseover='hoverVideos()' onmouseout='outVideos()'/></a>
                <a href="https://solmaria.shop/" target="_blank"><img class="MenuImage" id="menuMerch" src="../Images/Merch.svg" onmouseover='hoverMerch()' onmouseout='outMerch()'/></a>
                <a href="tour.html"><img class="MenuImage" id="menuTour" src="../Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()' /></a>
-               <img class="MenuImage" id="menuBio" src="../Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/>
+               <a href="bio.html"><img class="MenuImage" id="menuBio" src="../Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/></a>
                <a href="about.html"><img class="MenuImage" id="menuAbout" src="../Images/AboutHover.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/></a>
             </div>
          </div>
@@ -67,7 +67,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <!-- Overlay content -->
             <div class="overlay-content">
-               <div><img class="MenuImage" id="menuMusicMobile" src="../Images/Music.svg" onmouseover='hoverMusic()' onmouseout='outMusic()'/></div>
+               <div><a href="https://solmaria.com/"><img class="MenuImage" id="menuMusicMobile" src="../Images/Music.svg" onmouseover='hoverMusic()' onmouseout='outMusic()'/></a></div>
                <br>
                <div><a href="https://www.youtube.com/@EladioCarrion" target="_blank"><img class="MenuImage" id="menuVideosMobile" src="../Images/Videos.svg" onmouseover='hoverVideos()' onmouseout='outVideos()'/></a></div>
                <br>
@@ -75,7 +75,7 @@
                <br>
                <div> <a href="tour.html"> <img class="MenuImage" id="menuTourMobile" src="../Images/Tour.svg" onmouseover='hoverTour()' onmouseout='outTour()'/></a></div>
                <br>
-               <div>  <img class="MenuImage" id="menuBioMobile" src="../Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/></div>
+               <div>  <a href="bio.html"> <img class="MenuImage" id="menuBioMobile" src="../Images/Bio.svg" onmouseover='hoverBio()' onmouseout='outBio()'/></a></div>
                <br>
                <div> <a href="about.html"> <img class="MenuImage" id="menuAboutMobile" src="../Images/AboutHover.svg" onmouseover='hoverAbout()' onmouseout='outAbout()'/></a></div>
                <br>
@@ -158,8 +158,8 @@
           document.getElementById("menuTourMobile").src = "../Images/Tour.svg";
          }
          function hoverMusic() {
-          document.getElementById("menuMusic").src = "../Images/ComingSoon.svg";
-          document.getElementById("menuMusicMobile").src = "../Images/ComingSoon.svg";
+          document.getElementById("menuMusic").src = "../Images/MusicHover.svg";
+          document.getElementById("menuMusicMobile").src = "../Images/MusicHover.svg";
          }
          function outMusic() {
           document.getElementById("menuMusic").src = "../Images/Music.svg";
@@ -182,8 +182,8 @@
           document.getElementById("menuMerchMobile").src = "../Images/Merch.svg";
          }
          function hoverBio() {
-          document.getElementById("menuBio").src = "../Images/ComingSoon.svg";
-          document.getElementById("menuBioMobile").src = "../Images/ComingSoon.svg";
+          document.getElementById("menuBio").src = "../Images/BioHover.svg";
+          document.getElementById("menuBioMobile").src = "../Images/BioHover.svg";
          }
          function outBio() {
           document.getElementById("menuBio").src = "../Images/Bio.svg";

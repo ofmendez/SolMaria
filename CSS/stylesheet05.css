@@ -291,6 +291,8 @@
      .FifthRowContainer{
          flex-direction: column;
     }
+
+    
 }
  
 
@@ -472,6 +474,13 @@ cursor:default !important;
     display: block;
 }
 
+/* Pagina Bio */
+
+.ImageBioCel{
+    display: none;
+}
+
+
 @media (max-width: 800px){
 
     .ContenedorDescripciones{
@@ -498,6 +507,14 @@ cursor:default !important;
     
     .AlineadoDerecha{
         text-align: justify;
+    }
+
+    .ImageBioCompu{
+        display: none;
+    }
+    
+    .ImageBioCel{
+        display: block;
     }
 
 }
