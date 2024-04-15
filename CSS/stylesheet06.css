@@ -4,6 +4,11 @@
      font-family: SupplyRegular;
      src: url(../Fonts/SupplyRegular.woff);
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
  * {
      margin: 0;
      padding: 0;
