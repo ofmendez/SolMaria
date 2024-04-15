@@ -8,7 +8,7 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
  * {
      margin: 0;
      padding: 0;
@@ -317,6 +317,18 @@ html {
     padding:2.5vw 2vw 0vw 2vw;
 }
 
+.ContainerCiudades{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.BotonCiudad{
+    max-height:30px;
+    height: 30px;
+    padding: 0 20px;
+}
+
 .CamposFechasConciertos{
     max-width: 860px;
     margin: 0 auto;
@@ -340,6 +352,10 @@ html {
         text-align: center;
         margin-top:5vh;
         margin-bottom:2vh;
+    }
+
+    .ContainerCiudades{
+        flex-direction: column;
     }
 }
 
