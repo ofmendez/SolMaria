@@ -4,10 +4,22 @@
      font-family: SupplyRegular;
      src: url(../Fonts/SupplyRegular.woff);
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
  * {
      margin: 0;
      padding: 0;
      -webkit-tap-highlight-color: transparent;
+}
+H1{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.2vw;
+    line-height:1.5vw;
+    text-transform: uppercase;
+    color: #000;
 }
  H2{
      font-family: 'Archivo Black', sans-serif;
@@ -15,6 +27,13 @@
      line-height:3vw;
      text-transform: uppercase;
      color: #000;
+}
+H3{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5vw;
+    line-height:2vw;
+    text-transform: uppercase;
+    color: #000;
 }
  .linkSVG{
      width:fit-content;
@@ -62,6 +81,10 @@
 }
  .MenuImage:hover {
      transform: translate(0, -2px);
+}
+
+.FollowTitle{
+    text-align: center;
 }
  .SNSection{
      width:100%;
@@ -291,5 +314,258 @@
      .FifthRowContainer{
          flex-direction: column;
     }
+
+    
 }
  
+
+
+.H1TitlePages{
+ text-align: center;
+ font-size: 2vw;
+ margin:2vh 0;
+}
+
+/* Página Tour */
+
+
+.BannerTour{
+    width:100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
+.PageTittle{
+    text-align: center;
+    padding:2.5vw 2vw 0vw 2vw;
+}
+
+.PaisesTour{
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top:2vh;
+}
+
+.ContainerCiudades{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.BotonCiudad{
+    max-height:30px;
+    height: 30px;
+    padding: 0 20px;
+}
+
+.CamposFechasConciertos{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.LineaFechaConcierto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    margin-top:3vh;
+    margin-bottom:3vh;
+    animation: fadeInAnimation 2s ease-in-out 1;
+    gap:2vw;
+}
+
+@media (max-width:768px){
+    .LineaFechaConcierto{
+        display: block;
+        text-align: center;
+        margin-top:5vh;
+        margin-bottom:2vh;
+    }
+
+    .ContainerCiudades{
+        flex-direction: column;
+    }
+}
+
+.FechaConcierto{
+color:#000;
+flex-basis: 40%;
+font-family: 'Archivo Black', sans-serif;
+
+}
+
+.DiaMes{
+    font-size:18px;
+    color: #000;
+}
+
+.DiaMesSoldOut{
+    text-decoration:line-through 2px;
+}
+
+.CiudadConcierto{
+    font-size:20px;
+    display: inline-block;
+    font-family: SupplyRegular;
+}
+
+
+.LugarConcierto{
+    text-align: LEFT;
+    color:#000;
+    font-family: SupplyRegular;
+    flex-basis: 40%;
+    font-size: 20px;
+}
+
+
+
+@media (max-width:768px){
+    .LugarConcierto{
+        text-align: center;
+        padding:4px 25px 16px 25px;
+    }
+
+  
+}
+
+.BotonConcierto button{   
+    font-size:18px;
+    background-color: transparent;
+    padding: 6px 4px 8px 4px;
+    border: 0 solid transparent;
+    flex-basis: 40%;
+    transition: 0.3s;
+    width: 190px;
+    color:#fff;
+    cursor: pointer;
+}
+
+.BotonSoldOut button{   
+    font-size:18px;
+    background-color: transparent;
+    padding: 6px 4px 8px 4px;
+    border: 0 solid transparent;
+    flex-basis: 40%;
+    width: 190px;
+    color:#fff;
+}
+
+.BotonConcierto button:hover{   
+    transform: translate(0, -4px);
+}
+
+.BotonConciertoImg{
+    width:100%;
+}
+
+.BotonConciertoSoldOut{
+    width:100%;
+}
+
+.FechaVenta button:hover{ 
+    background-color: #F81E2F;
+    color: #fff !important;
+    border-bottom-color: #A5121E;
+    transition: 0.3s;
+
+}
+
+.SoldOut button{
+color:#fff !important;
+text-decoration:line-through 2px;
+cursor:default !important;
+}
+
+
+/* Pagina About */
+
+.ContenedorDescripciones{
+    display: flex;
+    flex-direction: row;
+    padding:0 8%;
+    gap:8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ColumnaDescripcionFoto{
+    width:40%;
+    align-items: center;
+}
+.ColumnaDescripcionTexto{
+    width:60%;
+    align-items: center;
+    padding:5% 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.DescripcionAbout{
+   
+    color:#000;
+    font-family: SupplyRegular;
+    font-size: 1.2vw;
+}
+
+.AlineadoIzquierda{
+    text-align: LEFT;
+}
+
+.AlineadoDerecha{
+    text-align: right;
+}
+
+.ImagenAboutCollage{
+    width:80%;
+    margin:0 auto;
+    display: block;
+}
+
+/* Pagina Bio */
+
+.ImageBioCel{
+    display: none;
+}
+
+
+@media (max-width: 800px){
+
+    .ContenedorDescripciones{
+        flex-direction: column;
+    }
+
+    .ColumnaDescripcionFoto{
+        width:100%;
+        align-items: center;
+        order:1;
+    }
+    .ColumnaDescripcionTexto{
+        width:100%;
+        order:2;
+    }
+
+    .DescripcionAbout{
+        font-size: 3vw;
+    }
+
+    .AlineadoIzquierda{
+        text-align: justify;
+    }
+    
+    .AlineadoDerecha{
+        text-align: justify;
+    }
+
+    .ImageBioCompu{
+        display: none;
+    }
+    
+    .ImageBioCel{
+        display: block;
+    }
+
+}
