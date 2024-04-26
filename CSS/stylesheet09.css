@@ -85,6 +85,7 @@ H3{
 
 .FollowTitle{
     text-align: center;
+    display:block;
 }
  .SNSection{
      width:100%;
@@ -238,7 +239,14 @@ H3{
      text-decoration: none!important;
 }
  @media (max-width: 800px){
-     H2{
+    H1{
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 3.2vw;
+        line-height:3.5vw;
+        text-transform: uppercase;
+        color: #000;
+    }
+    H2{
          font-size: 8vw;
          line-height:7vw;
     }
@@ -267,6 +275,9 @@ H3{
      .MenuImage{
          height:10vw;
          filter: invert(1);
+    }
+    .FollowTitle{
+        display:none;
     }
      .SNSection{
          display: none 
@@ -533,6 +544,13 @@ cursor:default !important;
 
 
 @media (max-width: 800px){
+
+    .H1TitlePages{
+        font-size: 4.5vw;
+       }
+       .PaisesTour{
+        font-size: 3.2vw;
+       }
 
     .ContenedorDescripciones{
         flex-direction: column;
