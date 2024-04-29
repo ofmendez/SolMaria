@@ -542,6 +542,10 @@ cursor:default !important;
     display: none;
 }
 
+.BreakMobile{
+    display:block;
+}
+
 
 @media (max-width: 800px){
 
@@ -584,6 +588,10 @@ cursor:default !important;
     
     .ImageBioCel{
         display: block;
+    }
+
+    .BreakMobile{
+        display:none;
     }
 
 }
