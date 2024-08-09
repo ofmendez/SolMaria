@@ -1,0 +1,658 @@
+/* ---------- IMPORTACIÓN FUENTES ---------- */
+@font-face {
+    font-family: AvenirNextCondensed;
+    src: url(../Fonts/AvenirNextCondensed.woff);
+}
+@font-face {
+    font-family: AkzidenzGroteskBQSuper;
+    src: url(../Fonts/AkzidenzGroteskBQSuper.woff);
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* ---------- CONFIGURACIÓN GENERAL ---------- */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+H1{
+    font-size: 1.2vw;
+    line-height:1.5vw;
+    text-transform: uppercase;
+    color: #000;
+}
+H2{
+    font-size: 3.5vw;
+    line-height:3vw;
+    text-transform: uppercase;
+    color: #000;
+}
+H3{
+    font-size: 1.5vw;
+    line-height:2vw;
+    text-transform: uppercase;
+    color: #000;
+}
+.ColorNegativo{
+    filter: invert(1);
+}
+
+/* ---------- CONFIGURACIÓN ELEMENTOS ---------- */
+.ImageFlexbox{
+    width:100%;
+}
+
+/* ---------- CONTENEDOR PAGINAS BOXED ---------- */
+.GeneralContainer{
+    background: #0F1519;
+}
+
+/* ---------- CONFIGURACIÓN MENU ---------- */
+/* MENÚ ESCRITORIO */
+.DesktopMenu{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+}
+.MenuSection{
+    width:70%;
+    display:flex;
+    justify-content: center;
+    column-gap: 2vw;
+}
+.MenuImage{
+    height:4.5vw;
+    cursor:pointer;
+    transition: transform .3s ease-out;
+}
+.MenuImage:hover {
+    transform: translate(0, -2px);
+}
+/* MENÚ MÓVIL */
+.MenuPrincipal{
+    display: none;
+    position: absolute;
+    top:3vw;
+    left:50%;
+    transform: translateX(-50%);
+}
+.MenuPrincipal img{
+    padding:0 !important;
+    margin-top:0 !important;
+}
+.MenuIcon{
+    width:7vw;
+}
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    background-color: #0F1519ee;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.overlay a {
+    line-height: 1.2em;
+    text-decoration: none;
+    font-size: 4vh;
+    color: #fff;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    text-decoration: none!important;
+}
+
+@media (max-width: 800px){
+    .DesktopMenu{
+        display:none;
+   }
+    .MenuPrincipal{
+        display: block;
+   }
+    .MenuImage{
+        height:10vw;
+   }
+}
+
+/* ---------- SECCIÓN REDES SOCIALES ---------- */
+.FollowTitle{
+    text-align: center;
+    display:block;
+    color: #AC0D56;
+    font-family: AkzidenzGroteskBQSuper;
+    letter-spacing: 0.3em;;
+}
+.SNSection{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:1vw;
+}
+.SNImage{
+    height:1.4vw;
+    cursor:pointer;
+    transition: transform .3s ease-out;
+}
+.SNImage:hover {
+    transform: translate(0, -2px);
+}
+
+@media (max-width: 800px){
+    .FollowTitle{
+        display:none;
+    }
+     .SNSection{
+         display: none 
+    }
+     .SNMobileSection{
+         position: absolute;
+         bottom:8vw;
+         left:50%;
+         transform: translateX(-50%);
+         display:flex;
+         gap:3vw;
+         align-items: center;
+         justify-content: center;
+    }
+     .SNImage{
+         filter: invert(1);
+         height:5vw;
+    }
+}
+/* ---------- PÁGINA TOUR ---------- */
+.BannerInicial{
+    width:100%;
+    display: block;
+}
+.BannerInicialMovil{
+    display:none;
+}
+.TituloTourDates{
+    font-family: AkzidenzGroteskBQSuper;
+    text-align: center;
+    font-size: 2.8vw;
+    margin:10vh 0 0 0;
+    padding:0 10%;
+    color: #ac0d56;
+    letter-spacing: 0.3em;
+}
+.MexicoTitle{
+width: 50svw;
+margin:0 auto;
+display: block;
+}
+.CamposFechasConciertos{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.LineaFechaConcierto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    margin-top:3vh;
+    margin-bottom:3vh;
+    animation: fadeInAnimation 2s ease-in-out 1;
+    gap:2vw;
+}
+.FechaConcierto{
+    color:#fff;
+    flex-basis: 40%;
+}
+.DiaMes{
+    font-size:22px;
+    color: #fff;
+    font-family: AkzidenzGroteskBQSuper;
+}
+.DiaMesSoldOut{
+    text-decoration:line-through 2px;
+}
+.CiudadConcierto{
+    font-size:20px;
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+}
+.LugarConcierto{
+    text-align: LEFT;
+    color:#AC0D56;
+    font-family: "Oswald", sans-serif;
+    flex-basis: 40%;
+    font-size: 20px;
+}
+.BotonConcierto button{   
+    font-size:18px;
+    background-color: transparent;
+    padding: 6px 4px 8px 4px;
+    border: 0 solid transparent;
+    flex-basis: 40%;
+    transition: 0.3s;
+    width: 190px;
+    color:#fff;
+    cursor: pointer;
+ }
+ .BotonSoldOut button{   
+    font-size:18px;
+    background-color: transparent;
+    padding: 6px 4px 8px 4px;
+    border: 0 solid transparent;
+    flex-basis: 40%;
+    width: 190px;
+    color:#fff;
+ }
+ .BotonConcierto button:hover{   
+    transform: translate(0, -4px);
+ }
+ .BotonConciertoImg{
+    width:100%;
+ }
+ .BotonConciertoSoldOut{
+    width:100%;
+ }
+ .FechaVenta button:hover{ 
+    background-color: #F81E2F;
+    color: #fff !important;
+    border-bottom-color: #A5121E;
+    transition: 0.3s;
+ }
+ .SoldOut button{
+    color:#fff !important;
+    text-decoration:line-through 2px;
+    cursor:default !important;
+ }
+
+@media (max-width:800px){
+    .BannerInicial{
+        display: none;
+    }
+    .BannerInicialMovil{
+        display:block;
+    }
+    .TituloTourDates{
+        font-size: 5vw;
+        margin:0;
+        line-height:1.2em;
+   }
+   .MexicoTitle{
+    width: 80svw;
+    }
+    .LineaFechaConcierto{
+        display: block;
+        text-align: center;
+        margin-top:5vh;
+        margin-bottom:2vh;
+   }
+    .ContainerCiudades{
+        flex-direction: column;
+   }
+    .LugarConcierto{
+        text-align: center;
+        padding:4px 25px 16px 25px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------
+.linkSVG{
+    width:fit-content;
+}
+
+.GeneralContainer{
+    background: #0F1519;
+}
+.BannerInicialDesktop{
+    width:100%;
+    display: block;
+}
+.BannerInicialMovil{
+    width:100%;
+    display: none;
+}
+.BannerInicialDesktop, .BannerInicialMovil img{
+    width:100%;
+}
+
+.ContentContainer{
+    background-image: url("../Images/Fondo.jpg");
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: contain;
+    margin-top:-1px;
+}
+
+
+
+
+
+
+.FirstRowContainer{
+    display: flex;
+    flex-direction: row;
+    padding:0 8%;
+    justify-content: center;
+    align-items: center;
+}
+.FR01{
+    width:40%;
+    align-items: center;
+}
+.FR02{
+    width:60%;
+    align-items: center;
+    padding:5% 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+}
+.Tracklist{
+    font-family: SupplyRegular;
+    letter-spacing: 0.2vw;
+    font-size:1vw;
+}
+.ContenedorPlataformas{
+    display:flex;
+    column-gap: 2vw;
+    row-gap: 1vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.BotonPlataforma{
+    height:5vw;
+    cursor: pointer;
+    transition: transform .3s ease-out;
+}
+.Btn_Plataforma{
+    height:2.5vw;
+    cursor: pointer;
+    transition: transform .3s ease-out;
+    min-height: 20px;
+    max-height:35px;
+}
+.BotonPlataforma:hover {
+    transform: translate(0, -7px);
+}
+.Btn_Plataforma:hover {
+    transform: translate(0, -7px);
+}
+.SecondRowContainer{
+    padding:4% 4% 0 4%;
+    z-index: 2;
+    position: relative;
+}
+.ThirdRowContainer{
+    margin-top:-8%;
+    z-index:1;
+    position: relative;
+}
+.Image03Desktop{
+    display:block;
+}
+.Image03Mobile{
+    display:none;
+}
+.ImageArt{
+    padding:5%;
+    margin-top: -8%;
+}
+.FourthRowContainer{
+    margin-top: -5%;
+    padding:0;
+    z-index: 2;
+    position: relative;
+}
+.FifthRowContainer{
+    display: flex;
+    flex-direction: row;
+    padding:4% 8%;
+    justify-content: center;
+    align-items: center;
+}
+.FifthR01, .FifthR02{
+    padding:5%;
+}
+
+
+
+
+/* Sección Meet & Greet */
+
+/* ----------
+.FranjaMeetGreet{
+   background-color: #000;
+   color:white;
+width:100svw;
+position: fixed;
+bottom:0;
+left:0;
+text-align: center;
+font-family: SupplyRegular;
+   font-size: 15px;
+   z-index:5;
+   padding:10px 0;
+}
+
+.TextoMeetAndGreet{
+   padding: 0 20px 0 10px;
+}
+
+
+
+@media (max-width: 800px){
+   H1{
+       font-family: 'Archivo Black', sans-serif;
+       font-size: 3.2vw;
+       line-height:3.5vw;
+       text-transform: uppercase;
+       color: #000;
+   }
+   H2{
+        font-size: 8vw;
+        line-height:7vw;
+   }
+    .FirstRowContainer{
+        flex-direction: column;
+   }
+    .FR01{
+        order:2;
+   }
+    .FR02{
+        order:1;
+        padding:0 0 5% 0;
+   }
+    .BannerInicialDesktop{
+        display:none;
+   }
+    .BannerInicialMovil{
+        display:block;
+   }
+
+    .FR01, .FR02{
+        width:100%;
+   }
+    .Tracklist{
+        letter-spacing: 0.32vw;
+        font-size:1.9vw;
+   }
+    .BotonPlataforma{
+        height:10vw;
+   }
+    .ContenedorPlataformas{
+        column-gap: 4vw;
+        row-gap: 4vw;
+   }
+    .Btn_Plataforma{
+        height:5vw;
+   }
+    .Image03Desktop{
+        display:none;
+   }
+    .Image03Mobile{
+        display:block;
+   }
+    .FourthRowContainer{
+        margin-top: 1%;
+   }
+    .FifthRowContainer{
+        flex-direction: column;
+   }
+
+   
+}
+
+
+
+.H1TitlePages{
+text-align: center;
+font-size: 2vw;
+margin:2vh 0;
+}
+
+/* Página Tour */
+/* ----------
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina About */
+/* ----------
+.ContenedorDescripciones{
+   display: flex;
+   flex-direction: row;
+   padding:0 8%;
+   gap:8%;
+   justify-content: center;
+   align-items: center;
+}
+
+.ColumnaDescripcionFoto{
+   width:40%;
+   align-items: center;
+}
+.ColumnaDescripcionTexto{
+   width:60%;
+   align-items: center;
+   padding:5% 0;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.DescripcionAbout{
+  
+   color:#000;
+   font-family: SupplyRegular;
+   font-size: 1.2vw;
+}
+
+.AlineadoIzquierda{
+   text-align: LEFT;
+}
+
+.AlineadoDerecha{
+   text-align: right;
+}
+
+.ImagenAboutCollage{
+   width:80%;
+   margin:0 auto;
+   display: block;
+}
+
+/* Pagina Bio */
+/* ----------
+.ImageBioCel{
+   display: none;
+}
+
+.BreakMobile{
+   display:block;
+}
+
+
+@media (max-width: 800px){
+
+   .H1TitlePages{
+       font-size: 5.3vw;
+      }
+      .PaisesTour{
+       font-size: 4vw;
+      }
+
+   .ContenedorDescripciones{
+       flex-direction: column;
+   }
+
+   .ColumnaDescripcionFoto{
+       width:100%;
+       align-items: center;
+       order:1;
+   }
+   .ColumnaDescripcionTexto{
+       width:100%;
+       order:2;
+   }
+
+   .DescripcionAbout{
+       font-size: 3vw;
+   }
+
+   .AlineadoIzquierda{
+       text-align: justify;
+   }
+   
+   .AlineadoDerecha{
+       text-align: justify;
+   }
+
+   .ImageBioCompu{
+       display: none;
+   }
+   
+   .ImageBioCel{
+       display: block;
+   }
+
+   .BreakMobile{
+       display:none;
+   }
+
+}

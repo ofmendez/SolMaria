@@ -363,6 +363,21 @@ font-family: SupplyRegular;
 /* Página Tour */
 
 
+.TourPageBackground{
+    background-image: url("../Images/TourBackground.jpg") !important;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.TituloTourDates{
+    text-align: center;
+    font-size: 4vw;
+    margin:4vh 0;
+    font-family: SupplyRegular;
+    padding:0 10%;
+   }
+
 .BannerTour{
     width:100%;
     max-width: 900px;
@@ -377,8 +392,10 @@ font-family: SupplyRegular;
 
 .PaisesTour{
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 3vw;
     margin-top:2vh;
+    font-family: SupplyRegular;
+    line-height: 1.2em;
 }
 
 .ContainerCiudades{
@@ -411,6 +428,19 @@ font-family: SupplyRegular;
 }
 
 @media (max-width:768px){
+
+    .TituloTourDates{
+    
+        font-size: 9vw;
+        margin:0;
+        line-height:1.2em;
+   
+       }
+
+       .PaisesTour{
+        font-size: 9vw !important;
+       }
+
     .LineaFechaConcierto{
         display: block;
         text-align: center;
