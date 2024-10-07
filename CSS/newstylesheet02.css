@@ -153,6 +153,7 @@ H3{
 }
 .SNImage{
     height:1.4vw;
+    min-height: 25px;
     cursor:pointer;
     transition: transform .3s ease-out;
 }
@@ -182,6 +183,67 @@ H3{
          height:5vw;
     }
 }
+
+/* ---------- POP UP INICIO ---------- */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 100;
+    transition: opacity 2s ease;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    padding: 35px;
+    width: 90%;
+    max-width: 1000px;
+    z-index: 101;
+    transition: opacity 2s ease;
+    display: none;
+}
+
+#popup .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#popup .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#close-btn img{
+    width:35px;
+}
+
+#close-btn:hover {
+    color: red;
+}
+
 /* ---------- PÁGINA TOUR ---------- */
 .BannerInicial{
     width:100%;
@@ -190,6 +252,7 @@ H3{
 .BannerInicialMovil{
     display:none;
 }
+
 .TituloTourDates{
     font-family: AkzidenzGroteskBQSuper;
     text-align: center;
