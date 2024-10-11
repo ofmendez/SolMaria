@@ -216,6 +216,23 @@ H3{
     width:100%;
 }
 
+.PopUpImgDesktop{
+    display:block;
+}
+
+.PopUpImgMobile{
+    display: none;
+}
+
+@media (max-width:800px){
+    .PopUpImgDesktop{
+        display:none;
+    }
+    
+    .PopUpImgMobile{
+        display: block;
+    }
+}
 
 #close-btn {
     position: absolute;
